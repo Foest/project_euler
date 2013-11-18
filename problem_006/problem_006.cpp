@@ -18,8 +18,12 @@ Find the difference between the sum of the squares of the first one hundred natu
 
 long solution_1(long num)
 {
+  //Closed form for the sum of the first n squares
   long a = (num * (num + 1) * (2 * num + 1)) / 6;
+
+  //Closed form for the sum of the first n natural numbers, squared
   long b = pow((num * (num + 1) / 2), 2);
+
   long result = b - a;
 
   std::cout << "Sum of the squares of the first " << num << " numbers: " << a << std::endl;
